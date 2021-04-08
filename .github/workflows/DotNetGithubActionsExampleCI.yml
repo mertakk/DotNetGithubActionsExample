@@ -34,7 +34,7 @@ jobs:
     
     - name: deploy
       run: |
-        $Files = "C:\_deploy\_build\_PublishedWebsites\DotNetGithubActionsExample\*"
+        $Files = "C:\_build\_PublishedWebsites\DotNetGithubActionsExample\*"
         $Destination = "c:\_Deploy"
         copy-item -Path $Files -Include * -Destination $Destination -Force -Recurse
       
